@@ -1,0 +1,47 @@
+
+.table {
+    display: flex;
+    flex-direction: column;
+    border: 1px #1d1d1f solid;
+    box-sizing: border-box;
+
+    .fixed-width {
+        display: flex;
+        width: 80px;
+        box-sizing: border-box;
+        padding: 0 5px;
+    }
+    .months-box {
+        display: flex;
+        flex-direction: row;
+        .month {
+            border-left: 1px #1d1d1f solid;
+
+
+        }
+    }
+    .table-info {
+        display: flex;
+        flex-direction: column;
+    }
+    &-row {
+        display: flex;
+        .value {
+            display: flex;
+            flex-direction: column;
+            border-top: 1px #1d1d1f solid;
+        }
+        .amount-box {
+            display: flex;
+        }
+        .amount {
+            display: flex;
+            border-left: 1px #1d1d1f solid;
+            border-top: 1px #1d1d1f solid;
+            box-sizing: border-box;
+            margin: 0;
+            align-items: center;
+
+        }
+    }
+}
