@@ -20,7 +20,7 @@ const TableContainer = () => {
       .catch((error) => console.error(error));
   }, []);
 
-
+  
   return (
     <div className="container">
       {!loading ? (
@@ -30,7 +30,7 @@ const TableContainer = () => {
               <th>Month</th>
               {months &&
                 months.map((month, index) => (
-                <th key={`month-${index}`}>{month}</th>
+                  <th key={`month-${index}`}>{month}</th>
                 ))}
             </tr>
           </thead>
@@ -47,10 +47,12 @@ const TableContainer = () => {
           </tbody>
         </Table>
       ) : (
-        <div className="flexbox">
-        <div>
-          <div class="bt-spinner"></div>
-        </div>
+        <div className="loader-list">
+          <div>
+            <div className="loader-1 center">
+              <span></span>
+            </div>
+          </div>
         </div>
       )}
     </div>
