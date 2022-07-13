@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.scss';
-import Table from './Table';
+import TableContainer from './TableContainer';
 
 function App() {
   return (
     <div className="App">
-     <Table />
+     <TableContainer />
     </div>
   );
 }

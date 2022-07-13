@@ -1,6 +1,11 @@
+html, body, #root {
+  height: 100%;
+}
+
 .App {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100%;
   background-color: #f8f7f8;
-  padding: 100px 0;
 }
