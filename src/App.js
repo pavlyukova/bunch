@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.scss';
-import TableContainer from './TableContainer';
+import TableContainer from './components/Table/TableContainer';
 
 function App() {
   return (

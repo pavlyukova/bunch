@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./table.scss";
-import data from "./data/db.json";
-import monthsList from "./data/months.json";
+import "./Table.scss";
+import data from "../../data/db.json";
+import monthsList from "../../data/months.json";
 import Table from "react-bootstrap/Table";
+import Loader from "../Loader/Loader";
 
 const TableContainer = () => {
   const [months, setMonths] = useState(monthsList);
@@ -47,13 +48,7 @@ const TableContainer = () => {
           </tbody>
         </Table>
       ) : (
-        <div className="loader-list">
-          <div>
-            <div className="loader-1 center">
-              <span></span>
-            </div>
-          </div>
-        </div>
+       <Loader />
       )}
     </div>
   );
